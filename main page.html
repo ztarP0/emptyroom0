@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pang HyunSeok">
+    <title>ztarP0's main page</title>
+  </head>
+  <style media="screen">
+    #menu{
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      border: 3px solid black;
+      text-align: center;
+      margin: 5px;
+    }
+    .menuclass{
+      border: 1px solid gray;
+    }
+    #body{
+      display: grid;
+      grid-template-columns: max-content auto max-content;
+    }
+    .left, .right {
+      margin: 5px 10px;
+    }
+  </style>
+  <body>
+    <h1 style="text-align: center" id="top"><strong>main page</strong></h1>
+    <div id = "menu" >
+      <div class="menuclass">
+        <strong>1</strong>
+        <div class="menulist" style="display:none">
+          <a href="#">test</a>
+        </div>
+      </div>
+      <div class="menuclass">
+        <strong>2</strong>
+      </div>
+      <div class="menuclass">
+        <strong>3</strong>
+      </div>
+      <div class="menuclass">
+        <strong>4</strong>
+      </div>
+      <div class="menuclass">
+        <strong>5</strong>
+      </div>
+    </div>
+    <div id="body">
+      <div class="left">
+        <a href="#">1</a><br>
+        <a href="#">2</a><br>
+        <a href="#">3</a><br>
+        <a href="#">4</a><br>
+        <a href="#">5</a><br>
+      </div>
+      <div class="center" style="border: 3px gray solid">
+        어쩌고 저쩌고 대충 본문 내용이라는 뜻
+      </div>
+      <div class="right">
+        <a href="#menu">menu</a><br>
+        <a href="#top">top</a><br>
+        <a href="#bottom">bottom</a><br>
+      </div>
+    </div>
+
+
+    <footer id="bottom" style="text-align: center;">
+      <p>Author: Pang HyunSeok<br>
+      <a href="">dew_tide_p@kakao.com</a></p>
+    </footer>
+  </body>
+</html>
